@@ -32,7 +32,29 @@ nav {
 }
 .nav_left {
   display: flex;
+  width: 60%;
   align-items: center;
+}
+.menu01 li{
+  color:#000;
+  position: relative;
+  transition: all 1s;
+}
+.menu01 li:hover{
+  color: #00b0f4;
+  transition: all 1s;
+}
+.menu01:hover ul{
+display: block;
+}
+.menu01 ul{
+display: none;
+list-style: disc;
+position: absolute;
+background-color: white;
+}
+.nav_left div ul li::marker{
+  color: #1e87f0;
 }
 .nav_left > ul {
   width: 100%;
@@ -276,13 +298,14 @@ nav {
 .stories {
   display: flex;
   gap: 10px;
+  min-width: 50px; 
+  overflow: scroll;
 }
 .story {
   height: 235px;
-  width: 100%;
   background-image: url(./story01.jpeg);
   background-repeat: no-repeat;
-  background-size: 255%;
+  background-size: 250%;
   background-position: center;
   border-radius: 5px;
   /* padding: 10px; */
@@ -1237,6 +1260,9 @@ color: #00b0f4;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
+  border-top: solid 1px #ccc;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .footer_bottom_left{
   font-size: 12px;
