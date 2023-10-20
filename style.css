@@ -26,6 +26,7 @@ nav {
   justify-content: space-between;
   margin-top: 20px;
   gap: 20px;
+  position: relative;
 }
 .nav_right {
   /* margin-left: 84px; */
@@ -121,6 +122,29 @@ nav {
   font-weight: 500;
   font-family: Helvetica, sans-serif;
 }
+.search_btn{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+input{
+  visibility: hidden;
+  position: absolute;
+  width: 60%;
+  height: 50px;
+  right: 29%;
+  top: 0;
+  border: solid 0.1px #00b0f4;
+  border-radius: 7px;
+  padding-left: 20px;
+}
+.search_btn:active{
+  >input{
+    visibility: visible;
+  }
+}
+
+
 /* section 1 begins here */
 /* section 1 top begins here */
 .background_section1,
