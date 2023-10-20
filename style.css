@@ -38,30 +38,30 @@ nav {
 /* .menu01 {
   transition-delay: 2s;
 } */
-.menu01 li {
+.menu li {
   color: #000;
   position: relative;
 }
-.menu01 li:hover {
+.menu li:hover {
   color: #00b0f4;
 }
-.menu01:hover ul {
+.menu:hover ul {
   /* opacity: 1; */
   visibility: visible;
 }
-.menu01 ul li {
+.menu ul li {
   transition: all 0.3s;
 }
-.menu01 ul li:hover {
+.menu ul li:hover {
   padding-left: 3px;
   transition: all 0.3s;
 }
-.menu01 ul li::marker {
+.menu ul li::marker {
   color: #1e87f0;
   font-size: 20px;
   cursor: pointer;
 }
-.menu01 ul {
+.menu ul {
   margin-left: -40px;
   margin-top: 20px;
   width: auto;
@@ -76,11 +76,30 @@ nav {
   z-index: 2;
   padding: 20px 50px;
   flex-wrap: wrap;
-  transition: all 0.2s;
-  transition-delay: 1s;
+  transition: all 1s ease-in-out;
+}
+.menu01 ul{
   display: grid;
   grid-template-columns: 120px 120px 120px;
-  column-gap: 80px;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+.menu02 ul{
+  display: grid;
+  grid-template-columns: 120px 120px;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+.menu03 ul{
+  display: grid;
+  grid-template-columns: 120px;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+.menu04 ul{
+  display: grid;
+  grid-template-columns: 120px 120px;
+  column-gap: 50px;
   row-gap: 20px;
 }
 .nav_left > ul {
